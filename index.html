@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2649d904e4.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"> 
+  <title>Rafael Sanches Danelluci</title>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li>
+        <a target= "_blank" href="https://github.com/RafaelDanelluci"><img src="./img/github.png" alt="icon Github" width="30px"></a>
+      </li>
+      <li>
+        <a target= "_blank" href="https://www.linkedin.com/in/rafaeldanelluci/"><img src="./img/linkedin.png" alt="icon linkedin" width="30px"></a>
+      </li>
+      <li>
+        <a target= "_blank" href="https://www.instagram.com/rafaeldanelluci/"><img src="./img/instagram.png" alt="icon Instagram" width="30px"></a>
+      </li>
+      <li>
+        <a target= "_blank" href="mailto:rafael_danelluci5@hotmail.com"><img src="./img/o-email.png" alt="icon email" width="30px"></a>
+      </li>
+      <li>
+        <a target= "_blank" href="https://wa.me/18997688832"><img src="./img/whatsapp.png" alt="icon whatsapp" width="30px"></a>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="name">
+        <h1>Rafael Sanches Danelluci</h1>
+        <h5>Fullstack Developer</h5>
+      </div>
+
+      <div id="arrow">
+          <i
+          id="anima" 
+          class="fa-solid fa-circle-chevron-down"
+          onclick="displayAbout()">
+        </i>
+      </div>
+
+      <div style="display: none" id="about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam soluta ea cupiditate, ratione dolores voluptates officiis fuga nam aut dolore error, quod nostrum perspiciatis cumque possimus itaque dolorum temporibus quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit consectetur totam nobis provident quo magnam mollitia maxime aperiam dolorem voluptates dicta, cupiditate dolor sapiente id expedita non cumque? Error, temporibus.</p>
+      </div>
+
+      <div class="form">
+        <div>
+          <p>Deixe seu contato!</p>
+        </div>
+        <form action="">
+          <input type="text" placeholder="Seu Email :)">
+          <button>Enviar!</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function displayAbout() {
+      var arrow = document.getElementById('anima');
+      arrow.classList.toggle('rotate');
+      var display = document.getElementById('about');
+      display.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
